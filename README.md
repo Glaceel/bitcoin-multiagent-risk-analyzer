@@ -17,9 +17,9 @@ An advanced AI orchestrator built on Langflow that utilizes a Multi-Agent archit
 - **Process 2**: Agent 2 ingests the computed metrics and evaluates the overall market risk using custom Prompt Templates.
 - **Output**: An executive financial risk report containing structured tactical decisions and checklists.
 
-## 🚀 How to Run
-1. Install and run **Langflow** (`pip install langflow`).
-2. Create a new flow and select **Upload Project**.
-3. Import the `bitcoin-multiagent-risk-analyzer.json` file from this repository.
-4. Insert your Gemini API Key in the LLM/Agent configurations.
-5. Upload the BTC historical CSV dataset into the **Read File** component and start chatting via **Chat Input**!
+## 📊 Dataset Structure
+The system expects a historical price dataset in CSV format with the following structure (you can find a sample file in `dataset_sample.csv`):
+```csv
+Date,Open,High,Low,Close,Volume
+2025-10-10,61000,62500,60800,62200,1500000000
+2025-11-25,58000,59000,53500,54000,3200000000
